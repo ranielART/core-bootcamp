@@ -8,9 +8,9 @@ import hre from "hardhat";
 
 describe("SolidityModifiers", function () {
   async function deploy() {
-    const [account1, account2] = await hre.ethers.getSigners();
+    const [account1, account2] = await hre.ethers.getSigners(); //creates two acc
 
-    const SolidityModifiers = await hre.ethers.getContractFactory(
+    const SolidityModifiers = await hre.ethers.getContractFactory( //
       "SolidityModifiers"
     );
     const INITIAL_BALANCE = 1_000_000;

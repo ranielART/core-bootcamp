@@ -6,8 +6,9 @@ contract SolidityConstructor {
     uint256 balance = 0;
 
     constructor(uint256 initialBalance) {
-        // balance = initialBalance;
+        console.log(" 02 balance is now ", balance);
+        balance = initialBalance;
 
-        // console.log("balance is now ", balance);
+        console.log(" 03 balance is now ", balance);
     }
 }
